@@ -4,22 +4,23 @@
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    height: 9vh;
+    height: 8vh;
     border-bottom: 1px solid black;
     color: white;
+    position: sticky;
+    top: 0;
 }
 
-#title{
+.title{
     display: flex;
-    /* flex-direction: row; */
+    margin-left: -1%;
 }
 .logo-img{
     width: 5rem;
-    margin-left: -7%;
 }
 .title-name{
     margin-top: 18%;
-    margin-left: -15%;
+    margin-left: -13%;
 }
 
 
@@ -28,7 +29,6 @@
     position: relative;
     width: 420px;
     height: 40px;
-    background-color: #222;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -44,21 +44,20 @@
     padding: 0 23px;
     z-index: 1;
 }
-
 .span{
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 95px; */
     width: 0;
     height: 100%;
-    background: linear-gradient(45deg, #4f1919, #ff3333);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 24%, rgba(0,198,238,1) 100%);
     border-radius: 8px;
     transition: .5s;
 }
 .nav-link:hover ~ .span{
     width: 95px;
 }
+
 .nav-link:nth-child(1):hover~span{
     left: 0;
 }
@@ -73,8 +72,62 @@
     left: 318px;
     width: 100px;
 }
-/* @media screen and (max-width: 820px){
-    .nav-link{
-      color: green;
+
+#menu{
+  display: none;
+  position: absolute;
+  /* top: 0.50rem; */
+  /* right: 0.5rem; */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+#menu span{
+  height: 0.3rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+
+  /* PRODUCT LINK CSS */
+ .product-link:hover {
+  background-color: #222;
+  padding: 7px 0;
+}
+  
+
+  /* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  @media screen and (max-width: 700px) {
+    /* .header{
+      display: flex;
+      justify-content: space-between;
+    } */
+    #menu{
+      display: flex;
     }
-  } */
+
+    #nav-links {
+      flex-direction: column;
+      align-items: start;
+    }
+    #nav-links ul{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+    }
+  }

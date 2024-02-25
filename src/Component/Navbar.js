@@ -1,33 +1,41 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import "./Navbar.css"
 import Logo from '../assets/F.png'
 
 const Navbar = () => {
   return (
-    <div className='header'>
+   <nav className='header'>
 
-    <div id='title'>
-      <Link to="/" className='logo-img'>
-          <img src={Logo} alt='Logo' className='logo-img' />
-      </Link>
-      <div className='title-name'>
-        <Link to="/">Descending</Link>
-      </div>
+    {/* THE LOGO & NAME */}
+    <div className='title'>
+      <Link to="/">
+          <img src={Logo} alt='Logo' className='logo-img'/>
+      </Link>      
+      <Link to="/" className='title-name'>Descending</Link>
     </div>
 
+    {/* THE MAIN MENU */}
     <div id='nav-links'>
-      <Link className='nav-link' to="/">Home</Link>
-      <Link className='nav-link' to="/about">About Us</Link>
-      <Link className='nav-link active' to="/service">Services</Link>
-      <Link className='nav-link' to="/contact">Contact</Link>
-      <span className='span'></span>
+      <div id='menu'>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <ul>
+        <li className='nav-link'><NavLink to="/">home</NavLink></li>
+        <li className='nav-link'><NavLink to="/about">About Us</NavLink></li>
+        <li className='nav-link'><NavLink to ="/service">Services</NavLink></li>
+        <li className='nav-link'><NavLink to="/contact">Contact</NavLink></li>
+        <span className='span'></span>
+      </ul>
     </div>
 
-    <div className='products-link'>
-      <a href='https://view-finder-nine.vercel.app/' target='_blank' rel='noopener noreferrer'>Our Products</a>
+    {/* PRODUCTS LINK */}
+    <div>
+      <a href='https://view-finder-nine.vercel.app/' target='blank' className='product-link'>Our Products</a>      
     </div>
-  </div>
+   </nav>
   )
 }
 
