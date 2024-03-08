@@ -1,0 +1,113 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-note{
+    /* background-color: yellow; */
+    margin: 5px;
+    padding: 0 5px;
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 7px 7px 5px grey;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 30px;
+}
+.about{
+    width: 58.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+.office-photo{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    /* opacity: 0.7; */
+}
+
+.inside-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-title{
+    background-color: #3CB371;
+    width: max-content;
+    padding: 3px;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.about-text{
+    background-color: #6495ED;
+    font-size: large;
+    width: 30rem;
+    height: max-content;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.working{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+.working-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3CB371;
+    width: 60rem;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.working-text{
+    width: max-content;
+    padding: 3px;
+}
+
+.links{
+    margin: 6px;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.links-title{
+    background-color: #3CB371;
+    width: max-content;
+    padding: 3px;
+    margin: 3px;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.links-text{
+    width: 70%;
+    padding: 4px;
+}
+.links-btn{
+    width: 11rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.links-btn:hover{
+    background-color: #C0C0C0;
+    color: black;
+}
